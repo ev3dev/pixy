@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+export QT_SELECT := qt4
+
+%:
+	dh $@
+
+override_dh_installudev:
+	dh_installudev --name=pixy

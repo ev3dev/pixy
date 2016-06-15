@@ -1,0 +1,3 @@
+src/host/pixymon/PixyMon /usr/bin
+src/host/pixymon/pixymon.desktop /usr/share/applications
+src/host/pixymon/pixy.ico /usr/share/pixmaps

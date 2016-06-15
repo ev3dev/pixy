@@ -1,0 +1,6 @@
+Files: debian/*
+Licence: /usr/share/common-licenses/GPL-2
+Copyright 2016 David Lechner <david@lechnology.com>
+
+Files: *
+Licence: /usr/share/common-licenses/GPL-2

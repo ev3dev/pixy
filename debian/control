@@ -1,0 +1,25 @@
+Source: pixy
+Maintainer: David Lechner <david@lechnology.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.7
+Build-Depends: debhelper (>=9.0.0), qt4-dev-tools, qt4-qmake, libqt4-dev,
+               libusb-1.0-0-dev
+VCS-Git: https://github.com/ev3dev/pixy.git
+VCS-Browser: https://github.com/ev3dev/pixy
+
+Package: pixymon
+Architecture: any
+Depends: pixy-rules, ${shlibs:Depends}, ${misc:Depends}
+Description: Desktop application that monitors a PixyCam
+ Pixy: A fast, easy to use, vision sensor
+ .
+ This package contains the desktop monitoring application PixyMon.
+
+Package: pixy-rules
+Architecture: all
+Depends: ${misc:Depends}
+Description: Udev rules for PixyCam
+ Pixy: A fast, easy to use, vision sensor
+ .
+ This package contains the udev rules needed to use PixyCam as non-root user.

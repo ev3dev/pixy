@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+from distutils.core import setup, Extension
+
+pixy_module = Extension('_pixy',
+	include_dirs = ['/usr/include/libusb-1.0',
+	'/usr/local/include/libusb-1.0',
+	'@CMAKE_SOURCE_DIR@/src/common/inc',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/utils',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/include'],
+	libraries = ['boost_thread',
+	'boost_system',
+	'boost_chrono',
+	'pthread',
+	'usb-1.0'],
+	sources=['pixy_wrap.cxx',
+	'@CMAKE_SOURCE_DIR@/src/common/src/chirp.cpp',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/pixy.cpp',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/chirpreceiver.cpp',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/pixyinterpreter.cpp',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/usblink.cpp',
+	'@CMAKE_SOURCE_DIR@/src/host/libpixyusb/src/utils/timer.cpp'])
+
+pixy_module.define_macros.append(('__LINUX__', 1))
+
+setup (name = 'pixy',
+	version = '0.3',
+	author  = 'Charmed Labs, LLC',
+	description = """libpixyusb module""",
+	ext_modules = [pixy_module],
+	py_modules = ["pixy"],
+	)

@@ -1,3 +1,10 @@
+pixy (2.0.10ev3dev2) stable; urgency=medium
+
+  * Add libpixyusb-dev package
+  * Add python3-libpixyusb package
+
+ -- David Lechner <david@lechnology.com>  Thu, 16 Jun 2016 15:15:47 -0500
+
 pixy (2.0.10ev3dev1) xenial; urgency=medium
 
   * Initial release.

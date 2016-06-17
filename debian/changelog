@@ -1,4 +1,4 @@
-pixy (2.0.10ev3dev2) stable; urgency=medium
+pixy (2.0.10ev3dev2) xenial; urgency=medium
 
   * Add libpixyusb-dev package
   * Add python3-libpixyusb package

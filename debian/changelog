@@ -1,3 +1,9 @@
+pixy (2.0.10ev3dev3) stable; urgency=medium
+
+  * Use unix line endings in udev rules
+
+ -- David Lechner <david@lechnology.com>  Mon, 27 Jun 2016 22:04:33 -0500
+
 pixy (2.0.10ev3dev2) stable; urgency=medium
 
   * Add libpixyusb-dev package

@@ -1,6 +1,6 @@
-pixy (2.0.10ev3dev3~xenial1) xenial; urgency=medium
+pixy (2.0.10ev3dev3~zesty1) zesty; urgency=medium
 
-  * Rebuild on launchpad
+  * ev3dev-zesty
 
  -- David Lechner <david@lechnology.com>  Wed, 12 Jul 2017 13:43:40 -0500
 

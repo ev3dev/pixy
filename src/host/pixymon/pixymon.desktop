@@ -6,5 +6,4 @@ Name=PixyMon
 Exec=/usr/bin/pixymon
 Icon=/usr/share/pixmaps/pixy.ico
 StartupNotify=false
-Encoding=UTF-8
 Keywords=pixy
